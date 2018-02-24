@@ -21,22 +21,6 @@ class AboutDialog extends Dialog {
 			}
 		});
 
-		Label label1 = new Label("JUnit");
-		label1.setFont(new Font("dialog", Font.PLAIN, 36));
-
-		Label label2 = new Label("JUnit " + Version.id()
-				+ " by Kent Beck and Erich Gamma");
-		label2.setFont(new Font("dialog", Font.PLAIN, 14));
-
-		Logo logo = new Logo();
-
-		GridBagConstraints constraintsLabel1 = new GridBagConstraints();
-		constraintsLabel1.gridx = 3;
-		constraintsLabel1.gridy = 0;
-		constraintsLabel1.gridwidth = 1;
-		constraintsLabel1.gridheight = 1;
-		constraintsLabel1.anchor = GridBagConstraints.CENTER;
-		add(label1, constraintsLabel1);
 
 		GridBagConstraints constraintsLabel2 = new GridBagConstraints();
 		constraintsLabel2.gridx = 2;

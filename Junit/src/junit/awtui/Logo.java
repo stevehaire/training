@@ -11,25 +11,6 @@ public class Logo extends Canvas {
 	private int fWidth;
 	private int fHeight;
 
-	public Logo() {
-		fImage = loadImage("logo.gif");
-		MediaTracker tracker = new MediaTracker(this);
-		tracker.addImage(fImage, 0);
-		try {
-			tracker.waitForAll();
-		} catch (Exception e) {
-		}
-
-		if (fImage != null) {
-			fWidth = fImage.getWidth(this);
-			fHeight = fImage.getHeight(this);
-		} else {
-			fWidth = 20;
-			fHeight = 20;
-		}
-		setSize(fWidth, fHeight);
-	}
-
 	public Image loadImage(String name) {
 		Toolkit toolkit = Toolkit.getDefaultToolkit();
 		try {
